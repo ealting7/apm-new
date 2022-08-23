@@ -9,7 +9,7 @@ import { IProduct } from "./product";
 
 export class ProductService {
 
-    private productUrl= 'https://ealting7.github.io/apm-new/api/products/products.json'; 
+    private productUrl= 'https://ealting7.github.io/apm-new/docs/api/products/products.json'; 
 
     constructor(private http: HttpClient) {
 
