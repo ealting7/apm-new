@@ -40,6 +40,11 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
         this.sub = this.productService.getProducts().subscribe({
             next: products => {
+
+                products.map(product => {
+                    product.imageUrl = product.imageUrl.toLowerCase();                    
+                });
+                
                 this.products = products;
                 this.filteredProducts = this.products; 
             },

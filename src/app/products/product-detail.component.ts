@@ -37,6 +37,7 @@ export class ProductDetailComponent implements OnInit {
           this.products.forEach(product => {
             
             if (product.productId === id) {
+              product.imageUrl = product.imageUrl.toLowerCase();
               this.product = product;
             }
           });
