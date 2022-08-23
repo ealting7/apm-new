@@ -63,7 +63,7 @@
 
                     <div class="col-sm">
                         <div class="text-center" >
-                            <img [src]="product.imageUrl" 
+                            <img src={{product.imageUrl | lowercase }}
                                 [style.width.px]="imageWidth"
                                 class="img-fluid"
                             />

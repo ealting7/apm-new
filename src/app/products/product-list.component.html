@@ -42,7 +42,7 @@
                     <tr *ngFor="let product of filteredProducts">
                         <td>
                             <img *ngIf="showImage"
-                                 [src]="product.imageUrl"
+                                 src={{product.imageUrl | lowercase }}
                                  [title]="product.productName"
                                  [style.width.px]="imageWidth"
                                  [style.margin.px]="imageMargin">
